@@ -54,14 +54,14 @@ layout: default
         </h2>
         <div class="post-byline">
           <img src="{{ site.posts.first.gravatar }}">
-          <a href="{{ site.posts.first.authorTwitter }}"
-          class="social-link">Tw</a>
+          <a href="{{ site.posts.first.authorTwitter }}" class="social-link">
+            <i class="fab fa-twitter"></i>
+          </a>
           by: {{ site.posts.first.author }}
           <span> - {{ site.posts.first.date | date: '%B %d, %Y' }}</span>
         </div>
       </header>
-      <div class="posts-image"
-      style="background-image:url({{ site.posts.first.postHero }})"></div>
+      <div class="posts-image" style="background-image:url({{ site.posts.first.postHero }})"></div>
       {{ site.posts.first.excerpt }}
     </div>
   </div>
